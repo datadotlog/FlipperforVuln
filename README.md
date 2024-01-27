@@ -18,7 +18,6 @@ This script generates detailed reports of detected vulnerabilities and sends the
 
 This script implements mitigation measures for identified vulnerabilities, focusing on improving system security.
 
-####################################################################################
 
 Contribution
 
