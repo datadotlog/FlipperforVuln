@@ -21,10 +21,15 @@ This script implements mitigation measures for identified vulnerabilities, focus
 ####################################################################################
 
 Contribution
+
 If you wish to contribute, follow these steps:
 
 Fork the project.
+
 Create a branch for your feature (git checkout -b feature/your-feature-name).
+
 Commit your changes (git commit -m 'Add new feature').
+
 Push to the branch (git push origin feature/your-feature-name).
+
 Open a Pull Request.
