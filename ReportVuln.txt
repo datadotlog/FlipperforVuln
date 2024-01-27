@@ -1,0 +1,27 @@
+REM TITLE ReportVuln
+REM AUTHOR datadotlog
+REM VERSION 0.0.1
+REM DESCRIPTION Rubber Ducky script example to Report vulnerabilities
+
+DELAY 500
+
+REM Step 2: Open the terminal on Flipper Zero
+ALT SPACE
+DELAY 200
+STRING m
+ENTER
+
+REM Step 3: Example - Redirect the output of the vulnerability scan to a file
+STRING nmap -p 1-65535 --script vuln <target_IP_or_hostname> > vuln_report.txt
+ENTER
+
+REM Step 4: Wait for the scan to complete
+DELAY 5000
+
+REM Step 5: Example - Send an email with the report (configure the email client on Flipper)
+STRING echo "Vulnerability Scan Report" | mail -s "Scan Report" your_email@example.com
+ENTER
+
+REM Step 6: Example - Archive the report for future reference
+STRING tar -czvf vuln_report_archive.tar.gz vuln_report.txt
+ENTER
